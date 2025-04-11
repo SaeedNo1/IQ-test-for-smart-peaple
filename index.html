@@ -1,0 +1,64 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>思维挑战系统</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: '微软雅黑', sans-serif;
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    h1 {
+      color: #2c3e50;
+      animation: fadeIn 2s ease-out;
+    }
+    p {
+      color: #555;
+      margin: 20px 0;
+    }
+    .start-btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .start-btn:hover {
+      background: #2980b9;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>思维挑战系统</h1>
+    <p>欢迎来到思维挑战平台！点击下方按钮开始你的10分钟脑力答题之旅。</p >
+    <button class="start-btn" onclick="startQuiz()">开始答题</button>
+  </div>
+
+  <script>
+    function startQuiz() {
+      window.location.href = "quiz.html";
+    }
+  </script>
+</body>
+</html>
